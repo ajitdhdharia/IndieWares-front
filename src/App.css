@@ -36,6 +36,10 @@ a {
   background-color: var(--color-131921);
 }
 
+.header-top-strip p {
+  font-size: 0.75rem;
+}
+
 .header-upper {
   background-color: var(--color-131921);
 }
@@ -44,19 +48,29 @@ a {
   background-color: var(--color-232f3e);
 }
 
-.header-upper .input-group-text {
-  background-color: var(--color-febd69);
+.header-upper h3 {
+  font-weight: 400;
 }
 
-.header-upper .header-upper-links img {
-  width: 30px;
-  height: 30px;
+.header-upper .input-group-text {
+  background-color: var(--color-febd69);
+  border-radius: 0 5px 5px 0;
+}
+
+.header-upper .header-upper-links p {
+  font-size: 0.75rem;
+}
+
+.header-upper .header-upper-links img,
+.header-bottom .dropdown button img {
+  width: 20px;
+  height: 20px;
 }
 
 .header-bottom .menu-links a,
 .header-bottom .dropdown button {
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   letter-spacing: 0.3;
@@ -68,10 +82,26 @@ a {
 }
 /* Header end */
 
+/* Footer start */
 
+footer {
+  background-color: var(--color-232f3e);
+}
 
-/* Footer Part */
+.footer-newsletter img {
+  height: 25px;
+  width: 25px;
+}
 
+footer:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+footer .input-group-text {
+  background-color: var(--color-232f3e);
+  color: white;
+  padding: 8px 17px;
+  border-radius: 0 5px 5px 0;
+}
 
-/* Footer Part Ends Here */
+/* Footer Ends */
