@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
     <>
-      <div className="home-wrapper-1 py-5">
+      <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
@@ -86,8 +87,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="home-wrapper-2 py-5">
+      </section>
+      <section className="home-wrapper-2 py-5">
         <div className="contianer-xxl">
           <div className="row">
             <div className="col-12">
@@ -131,8 +132,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="home-wrapper-2 py-5">
+      </section>
+      <section className="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
             <div className="categories d-flex justify-content-between flex-wrap align-items-center">
@@ -195,8 +196,19 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="marque-wrapper home-wrapper-2 py-5">
+      </section>
+      <section className="featured-wrapper py-5 home-wrapper-2">
+        <div className="row">
+          <div className="col-12">
+            <h3 className="section-heading">Featured colection</h3>
+          </div>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
+      </section>
+      <section className="marque-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
             <div className="marquee-inner-wrapper card-wrapper">
@@ -229,8 +241,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="blog-wrapper py-5 home-wrapper-2">
+      </section>
+      <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Our Latest Blogs</h3>
@@ -250,7 +262,7 @@ const Home = () => {
             <BlogCard />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
