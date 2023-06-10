@@ -8,7 +8,6 @@ import OurStore from "./pages/OurStore";
 import Blog from "./pages/Blog";
 
 function App() {
-  console.log("Browser router:::", <BrowserRouter />);
   return (
     <>
       <BrowserRouter>
