@@ -58,7 +58,10 @@ const Header = () => {
                     Favorite <br /> Wishlist
                   </p>
                 </Link>
-                <Link className="d-flex align-items-center gap-10 text-white">
+                <Link
+                  to="/login"
+                  className="d-flex align-items-center gap-10 text-white"
+                >
                   <img src="images/user.svg" alt="user" />
                   <p className="mb-0">
                     Log In <br /> My Account
@@ -88,8 +91,10 @@ const Header = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <img src="images/menu.svg" alt="menu"/>
-                  <span className="me-5 d-inline-block px-2">Shop Categories</span>
+                  <img src="images/menu.svg" alt="menu" />
+                  <span className="me-5 d-inline-block px-2">
+                    Shop Categories
+                  </span>
                 </button>
                 <ul
                   className="dropdown-menu"
