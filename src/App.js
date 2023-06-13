@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import OurStore from "./pages/OurStore";
 import Blog from "./pages/Blog";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="store" element={<OurStore />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
           </Route>
         </Routes>
       </BrowserRouter>
