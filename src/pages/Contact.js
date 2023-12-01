@@ -14,7 +14,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.6973585129085!2d-79.35454292510829!3d43.779140744278095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d2e5ff1ad673%3A0x8d887636845d7993!2s10%20Esterbrooke%20Ave%2C%20North%20York%2C%20ON%20M2J%202C2!5e0!3m2!1sen!2sca!4v1685998525807!5m2!1sen!2sca"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.615639179774!2d-79.37764632343317!3d43.656164552238494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb35d0b62891%3A0xd1a496959f678ede!2s77%20Mutual%20St%2C%20Toronto%2C%20ON%20M5B%202A9!5e0!3m2!1sen!2sca!4v1701390039017!5m2!1sen!2sca"
               width="100%"
               height="450"
               loading="lazy"
@@ -69,18 +69,17 @@ const Contact = () => {
                     <li className="mb-3 d-flex gap-15 align-items-center">
                       <AiOutlineHome className="fs-5" />
                       <address className="mb-0">
-                        33-10 Esterbroke Avenue, North York, Ontario, Canada -
-                        M2J 2C2
+                        2907 - 77 Mutual Street, Toronto, Ontario - M5B 2A9
                       </address>
                     </li>
                     <li className="mb-3 d-flex gap-15 align-items-center">
                       <BiPhoneCall className="fs-5" />
-                      <a href="tel:+91 8264954234">+91 8264954234</a>
+                      <a href="tel:+91 8264954234">+1 4375531005</a>
                     </li>
                     <li className="mb-3 d-flex gap-15 align-items-center">
                       <AiOutlineMail className="fs-5" />
                       <a href="mailto:navdeepdahiya753@gmail.com">
-                        navdeepdahiya753@gmail.com
+                        dhdhariaajit@gmail.com
                       </a>
                     </li>
                     <li className="mb-3 d-flex gap-15 align-items-center">

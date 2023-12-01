@@ -38,7 +38,7 @@ const Footer = () => {
               <h5 className="text-white mb-2">Contact Us</h5>
               <div className="text-white">
                 <address className="mb-1">
-                  33-10 Esterbroke Avenue, North York, Ontario, Canada - M2J 2C2
+                  2907-77 Mutual Street, Toronto, Ontario, Canada - M5B 2A9
                 </address>
                 <a
                   href="tel: +1 437-553-1005"

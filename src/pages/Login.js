@@ -27,10 +27,10 @@ const Login = () => {
                   <Link to="/forgot-password">Forgot Password?</Link>
 
                   <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
-                    <button className="button border-0" type="submit">
+                    <button className="button border-0 px-3 py-2" type="submit">
                       Login
                     </button>
-                    <Link to="/signup" className="button signup">
+                    <Link to="/signup" className="button signup px-3 py-2">
                       SignUp
                     </Link>
                   </div>

@@ -28,7 +28,7 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-3">
-              <h3 className="text-white mb-0">INDIE COUTURE</h3>
+              <h3 className="text-white mb-0">INDIEWARES</h3>
             </div>
             <div className="col-5">
               <div className="input-group">
