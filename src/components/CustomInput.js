@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-const CustomInput = (props) => {
-  const { type, name, placeholder, classname } = props;
+const CustomInput = ({ type, name, placeholder, classname, onInputChange }) => {
   return (
     <div>
       <input
@@ -9,6 +8,7 @@ const CustomInput = (props) => {
         name={name}
         placeholder={placeholder}
         className={`form-control ${classname}`}
+        onChange={(e) => onInputChange(name, e.target.value)}
       />
     </div>
   );

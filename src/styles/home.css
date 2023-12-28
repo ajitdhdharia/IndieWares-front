@@ -1,0 +1,41 @@
+#home .home-swiper .image-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+#home .home-swiper .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#home .home-swiper .image-container .overlay {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color */
+  text-align: end;
+}
+#home .home-swiper .image-container .overlay p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#home .home-swiper .image-container .overlay button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+#home .home-swiper .image-container .overlay .btn-outline-primary:hover {
+  background-color: #FFA500;
+  border-color: #FFA500;
+}
+#home .home-swiper .swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+}
+#home .new-arrivals {
+  margin: 3rem 6rem;
+}
+
+/*# sourceMappingURL=home.css.map */

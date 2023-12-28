@@ -1,110 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
+import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
+
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer-newsletter py-3 px-3">
+      <footer className="footer-top pt-3">
         <div className="container-xxl">
-          <div className="row align-items-center mb-0">
-            <div className="col-5">
-              <div className="footer-top-data d-flex gap-30 align-itmes-center">
+          <div className="row">
+            <div className="col-6 newsletter">
+              <div className="newsletter-title">
                 <img src="images/newsletter.png" alt="newsletter" />
-                <h3 className="mb-0 text-white">Sign Up for Newsletter</h3>
+                <span>Sign Up for Newsletter</span>
               </div>
-            </div>
-            <div className="col-7">
-              <div className="input-group">
+              <div className="input-group mb-3">
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Email address"
-                  aria-label="Your Email address"
+                  placeholder="Enter your email"
+                  aria-label="Enter your email"
                   aria-describedby="basic-addon2"
                 />
-                <span className="input-group-text p-2" id="basic-addon2">
-                  Subscribe
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <footer className="py-3 px-3">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-4">
-              <h5 className="text-white mb-2">Contact Us</h5>
-              <div className="text-white">
-                <address className="mb-1">
-                  2907-77 Mutual Street, Toronto, Ontario, Canada - M5B 2A9
-                </address>
-                <a
-                  href="tel: +1 437-553-1005"
-                  className="text-white mt-1 d-block mb-1"
-                >
-                  +1 437-553-1005
-                </a>
-                <a
-                  href="mailto:ajitdhdhariaaa@gmail.com"
-                  className="text-white mt-1 d-block mb-4"
-                >
-                  ajitdhdhariaaa@gmail.com
-                </a>
-                <div className="social_icons d-flex align-items-center gap-15">
-                  <a className="text-white" href="">
-                    <BsLinkedin />
-                  </a>
-                  <a className="text-white" href="">
-                    <BsInstagram />
-                  </a>
-                  <a className="text-white" href="">
-                    <BsGithub />
-                  </a>
-                  <a className="text-white" href="">
-                    <BsYoutube />
-                  </a>
+                <div className="input-group-append">
+                  <span className="input-group-text" id="basic-addon2">
+                    <Link>Subscribe</Link>
+                  </span>
                 </div>
               </div>
             </div>
-            <div className="col-3">
-              <h5 className="text-white mb-2">Information</h5>
-              <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-1">Privacy Policy</Link>
-                <Link className="text-white py-1">Refund Policy</Link>
-                <Link className="text-white py-1">Shipping Policy</Link>
-                <Link className="text-white py-1">Terms & Conditions</Link>
-                <Link className="text-white py-1">Blogs</Link>
-              </div>
-            </div>
-            <div className="col-3">
-              <h5 className="text-white mb-2">Account</h5>
-              <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-1">About Us</Link>
-                <Link className="text-white py-1">FAQs</Link>
-                <Link className="text-white py-1">Contact</Link>
-              </div>
-            </div>
-            <div className="col-2">
-              <h5 className="text-white mb-2">Quick Links</h5>
-              <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-1">Laptops</Link>
-                <Link className="text-white py-1">Headphones</Link>
-                <Link className="text-white py-1">Tablet</Link>
-                <Link className="text-white py-1">Watch</Link>
-              </div>
+            <div className="col-6 footer-links">
+              <Link to="/">Shop</Link>
+              <Link to="/store">About Us</Link>
+              <Link to="/blogs">Blogs</Link>
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
         </div>
       </footer>
-      <footer className="py-3 px-3">
+      <footer className="footer-bottom">
         <div className="contianer-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-6 social_icons">
+              <Link to="">
+                <BsInstagram />
+              </Link>
+              <Link to="">
+                <BsFacebook />
+              </Link>
+            </div>
+            <div className="col-6 copyright">
               <p className="text-center mb-0 text-white">
                 {" "}
-                &copy; {new Date().getFullYear()}; Powered by Indie Couture
+                &copy; {new Date().getFullYear()} Powered by IndieWares
               </p>
             </div>
           </div>
