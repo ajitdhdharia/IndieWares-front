@@ -31,6 +31,10 @@ const Home = () => {
     }
   }, []);
 
+  const handleInstaLogin = () => {
+    window.location.href = `https://api.instagram.com/oauth/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=http://localhost:3000/auth&scope=user_profile,user_media&response_type=code`;
+  }
+
   const images = [
     [
       "swiper-0.png",
@@ -100,16 +104,45 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="featured">
+      <section className="block-printing-intro">
         <div className="container-xxl">
           <div className="row">
-            <div className="col"></div>
+            <div className="image-container">
+              <img src="/images/swiper-0.png" alt="about us banner" />
+              <div className="overlay">
+                <p>What is Block Printing</p>
+                <span>
+                  Traditional Indian textile printing technique that has been
+                  practiced for centuries in the region of Jaipur, Rajasthan.
+                  This art form is renowned for its unique designs, vibrant
+                  colors, and intricate detailing
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="featured">
+        <div className="container-xxl">
+          <div className="row justify-content-center mb-2">
+            <span>Our featured block prints</span>
+          </div>
+          <div className="row justify-content-center">
+            <h3>Shops best of world</h3>
+          </div>
+          <div className="row">
+            {productData &&
+              productData
+                .slice(0, 4)
+                .map((item, index) => createProduct(item, index))}
           </div>
         </div>
       </section>
       <section className="instagram-posts">
         <div className="container-xxl">
-          <div className="row"></div>
+          <div className="row">
+            <button onClick={handleInstaLogin}>Login Instagram</button>
+          </div>
         </div>
       </section>
     </div>

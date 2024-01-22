@@ -37,5 +37,34 @@
 #home .new-arrivals {
   margin: 3rem 6rem;
 }
+#home .block-printing-intro .image-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+#home .block-printing-intro .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#home .block-printing-intro .image-container .overlay {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color */
+  text-align: end;
+}
+#home .block-printing-intro .image-container .overlay p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#home .block-printing-intro .image-container .overlay span {
+  color: white;
+}
+#home .featured {
+  margin: 3rem 6rem;
+}
 
 /*# sourceMappingURL=home.css.map */
