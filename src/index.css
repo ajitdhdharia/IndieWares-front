@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", "Poppins", sans-serif;
+  background-color: #cfe0c380;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
