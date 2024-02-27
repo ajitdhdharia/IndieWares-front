@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   font-family: "Lato", "Poppins", sans-serif;
   background-color: #cfe0c380;
+  color: #1f363d;
 }
 
 body::-webkit-scrollbar {

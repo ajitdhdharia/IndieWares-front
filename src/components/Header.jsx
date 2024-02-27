@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-20">
+    <div className="sticky top-0 left-0 right-0 z-20">
       <header className="flex justify-center font-light bg-eton-blue py-2">
         <p>Free shipping over $100 & Free Returns</p>
       </header>
