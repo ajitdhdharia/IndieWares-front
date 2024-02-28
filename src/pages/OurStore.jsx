@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import Dropdown from "../components/Dropdown";
+import Sidebar from "../components/Sidebar";
+import { Outlet } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
 const OurStore = () => {
@@ -11,9 +12,11 @@ const OurStore = () => {
       <BreadCrumb title="Our Store" />
       <div className="grid grid-cols-4">
         <div className="col-span-1">
-          <Dropdown />
+          <Sidebar />
         </div>
-        <div className="col-span-3">Ishita Choudhary</div>
+        <div className="col-span-3">
+          <Outlet />
+        </div>
       </div>
     </>
   );
